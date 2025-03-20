@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
+import android.widget.Toast; // <-- TAMBAHAN
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,6 +13,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Tombol untuk Toast
+        Button btnHalo = findViewById(R.id.btnHalo);
+        btnHalo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Halo Senopati!", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         // Inisialisasi komponen
         EditText etNama = findViewById(R.id.etNama);
