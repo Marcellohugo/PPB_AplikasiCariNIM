@@ -6,4 +6,7 @@
     <string name="text_hasil">Hasil akan ditampilkan di sini</string>
     <string name="warning_input">Harap masukkan Nama dan NIM!</string>
     <string name="result_text">Nama: %1$s\nNIM: %2$s</string>
+    <string name="Hapus">Hapus</string>
+    <string name="Perbarui">Perbarui</string>
+
 </resources>
